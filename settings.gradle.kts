@@ -9,5 +9,3 @@ dependencyResolutionManagement {
 rootProject.name = "doodo"
 
 include(":app")
-include(":scheduler")
-include(":email-sender")
