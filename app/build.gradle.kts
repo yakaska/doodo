@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     id("convention-jvm-module")
     id("detekt-common-configuration")
+    id("spotbugs-common-configuration")
 
     alias(libs.plugins.springframework.boot)
     alias(libs.plugins.kotlin.plugin.spring)
