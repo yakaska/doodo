@@ -5,6 +5,7 @@ jacoco = "0.8.10"
 detekt = "1.23.1"
 spotbugs = "6.2.4"
 sonarqube = "6.8.0.34955"
+postgresql = "42.6.0"
 
 [plugins]
 kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
@@ -14,16 +15,17 @@ springframework-boot = { id = "org.springframework.boot", version.ref = "spring-
 spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
 
-
 # Plugins
 kotlin-jvm-gradle-plugin = { module = "org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin", version.ref = "kotlin" }
 detekt-gradle-plugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
 spotbugs-gradle-plugin = { module = "com.github.spotbugs:com.github.spotbugs.gradle.plugin", version.ref = "spotbugs" }
 sonarqube-gradle-plugin = { module = "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin", version.ref = "sonarqube" }
 
+# Database
+postgresql = {module = "org.postgresql:postgresql", version.ref = "postgresql"}
 
 # Spotbugs plugins
-sb-contrib = { module = "com.mebigfatguy.sb-contrib:sb-contrib", version = "8.0.0" }
+sb-contrib = { module = "com.mebigfatguy.sb-contrib:sb-contrib", version = "7.6.12" }
 findsecbugs-plugin = { module = "com.h3xstream.findsecbugs:findsecbugs-plugin", version = "1.11.0" }
 
 # Detekt plugins
