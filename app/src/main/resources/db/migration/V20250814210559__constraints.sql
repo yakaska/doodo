@@ -1,7 +1,3 @@
---liquibase formatted sql
-
---changeset yakaska:02
-
 ALTER TABLE "Milestones" ADD FOREIGN KEY ("ProjectID") REFERENCES "Projects" ("ProjectID");
 
 ALTER TABLE "Attachments" ADD FOREIGN KEY ("TaskID") REFERENCES "Tasks" ("TaskID");
