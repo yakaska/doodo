@@ -5,7 +5,7 @@ plugins {
 }
 
 detekt {
-    toolVersion = "1.23.1"
+    toolVersion = "1.23.8"
     config.setFrom("${project.rootDir}/config/detekt/detekt-config.yml")
     parallel = true
     buildUponDefaultConfig = true

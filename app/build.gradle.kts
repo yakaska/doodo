@@ -22,17 +22,19 @@ dependencies {
     implementation(platform(libs.spring.boot.bom))
     implementation(libs.spring.boot.starter.web)
 
+    implementation(libs.postgresql)
     implementation(libs.kotlin.logging)
     implementation(libs.springboot.cache)
 
     testImplementation(libs.bundles.mockito)
     testImplementation(libs.bundles.junit5)
     testImplementation(libs.springframework.starter.test)
+
 }
 
 tasks {
     compileKotlin {
-        compilerOptions.jvmTarget.set(JvmTarget.JVM_17)
+        compilerOptions.jvmTarget.set(JvmTarget.JVM_21)
     }
 
     clean {
